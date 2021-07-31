@@ -10,3 +10,4 @@ Route::resource('/users', UserController::class)->except('show')->middleware('au
 Route::view('/login', 'users.login')->middleware('guest');
 Route::post('/login', [SessionController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/logout', [SessionController::class, 'logout'])->name('logout')->middleware('auth');
+Route::redirect('/register', 'users/create');

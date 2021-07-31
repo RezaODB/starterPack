@@ -2,7 +2,7 @@
 
 @section('content')
 	
-<h1>New user</h1>
+<h1>Register</h1>
 
 <form action="{{ route('users.store') }}" method="POST">
 		
