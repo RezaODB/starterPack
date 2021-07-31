@@ -1,0 +1,12 @@
+<?php
+
+use App\Http\Controllers\SessionController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
+// AUTH
+Route::view('/admin', 'admin')->middleware('auth');
+Route::resource('/users', UserController::class)->except('show')->middleware('auth');
+Route::view('/login', 'users.login')->middleware('guest');
+Route::post('/login', [SessionController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/logout', [SessionController::class, 'logout'])->name('logout')->middleware('auth');
