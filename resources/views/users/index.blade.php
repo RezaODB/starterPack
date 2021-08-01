@@ -2,6 +2,8 @@
 
 @section('content')
 
+<h2>Users</h2>
+
 <ul>
 	@foreach ($users as $item)
 	<li>
@@ -12,17 +14,15 @@
 
 			@method('DELETE')
 
-			<button type="submit" onclick="return confirm('Are you sure?')">Delete user</button>
+			<button type="submit" onclick="return confirm('Are you sure?')" class="delete">X</button>
 		
 		</form>
 	</li>	
 	@endforeach
 </ul>
 
-<a href="{{ route('users.create') }}">New user</a>
+<a href="{{ route('users.create') }}" class="btn">New user</a>
 
-@if (session('flash'))
-    <div>{{ session('flash') }}</div>
-@endif
+@include('admin.flashes')
 	
 @endsection

@@ -60,7 +60,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return back()->with('flash', 'User delete');
+        return back()->with('flash', 'User deleted');
     }
     
 }

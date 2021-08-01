@@ -2,13 +2,13 @@
 
 @section('content')
 	
-<h1>Register</h1>
+<h2>Register</h2>
 
 <form action="{{ route('users.store') }}" method="POST">
 		
 	@include('users.form')
 
-	<button type="submit">Submit</button>
+	<button type="submit" class="btn">Submit</button>
 
 </form>
 

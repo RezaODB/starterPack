@@ -2,7 +2,7 @@
 
 @section('content')
 	
-<h1>Update user</h1>
+<h2>Update user</h2>
 
 <form action="{{ route('users.update', $user) }}" method="POST">
 	
@@ -10,7 +10,7 @@
 
 	@include('users.form')
 
-	<button type="submit">Update</button>
+	<button type="submit" class="btn">Update</button>
 
 </form>
 
