@@ -11,12 +11,16 @@
 	<div class="input">
 		<label for="email">Email</label>
 		<input type="email" name="email" id="email" value="{{ old('email') }}" required>
-		@error('email') {{ $message }} @enderror
+		<div class="error">
+			@error('email') {{ $message }} @enderror
+		</div>
 	</div>
 	
 	<div class="input">
 		<label for="password">Password</label>
-		<input type="password" name="password" id="password" required>
+		<div class="error">
+			<input type="password" name="password" id="password" required>
+		</div>
 	</div>
 	
 	<div class="input">

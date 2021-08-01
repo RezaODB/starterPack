@@ -12,7 +12,7 @@
 
 	@include('admin.header')
 
-	@include('admin.aside')
+	@include('admin.nav')
 
 	<main>
 
