@@ -42,7 +42,6 @@ a {
 .delete {
 	background-color: transparent;
 	padding: .3rem;
-	font-weight: 700;
 	border: none;
 	color: red;
 	cursor: pointer;
@@ -53,7 +52,7 @@ a {
     bottom: 1rem;
     right: 1rem;
     color: white;
-    background-color: purple;
+    background-color: blue;
     font-size: .9rem;
     padding: .5rem 1rem;
 }
@@ -157,6 +156,10 @@ main li:not(:last-of-type) {
 
 main li:hover {
 	background-color: ghostwhite;
+}
+
+main li a:hover {
+	font-weight: 700;
 }
 
 .input {
