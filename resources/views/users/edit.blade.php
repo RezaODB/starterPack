@@ -2,18 +2,26 @@
 
 @section('content')
 
-<div class="card">
+<div class="flex">
+
+	<div class="left">
+
+		<h2>Update profil</h2>
 	
-	<h2>Update user</h2>
+	</div>
 	
-	<form action="{{ route('users.update', $user) }}" method="POST">
+	<div class="right">
+
+		<form action="{{ route('users.update', $user) }}" method="POST">
+			
+			@method('PATCH')
+			
+			@include('users.form')
+			
+		</form>
 		
-		@method('PATCH')
-		
-		@include('users.form')
-		
-	</form>
-	
+	</div>
+
 </div>
 
 @endsection

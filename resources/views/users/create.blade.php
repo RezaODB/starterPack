@@ -2,15 +2,21 @@
 
 @section('content')
 
-<div class="card">
+<div class="flex">
 	
-	<h2>Register</h2>
-	
-	<form action="{{ route('users.store') }}" method="POST">
+	<div class="left">
+
+		<h2>Register</h2>
 		
-		@include('users.form')
-		
-	</form>
+	</div>
+
+	<div class="right">
+		<form action="{{ route('users.store') }}" method="POST">
+			
+			@include('users.form')
+			
+		</form>
+	</div>
 
 </div>
 

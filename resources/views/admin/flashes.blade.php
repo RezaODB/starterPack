@@ -1,5 +1,5 @@
 @if (session('flash'))
 
-    <div class="flash">{{ session('flash') }}</div>
+    <div class="flash btn">{{ session('flash') }}</div>
 
 @endif
