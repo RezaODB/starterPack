@@ -88,11 +88,17 @@ header .dropdown-items .item {
 header .dropdown svg {
 	vertical-align: text-top;
 	margin-left: .5rem;
+	transform: none;
+	transition: transform .3s;
 }
 
 header .dropdown-items .item:hover {
 	color: white;
 	background-color: black;
+}
+
+header .dropdown:hover .item:not(.dropdown-items .item) svg {
+	transform: rotate(180deg);
 }
 
 nav {

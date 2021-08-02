@@ -31,3 +31,5 @@
 		@error('password') {{ $message }} @enderror
 	</div>
 </div class="input">
+
+<button type="submit" class="btn">Submit</button>

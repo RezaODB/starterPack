@@ -10,8 +10,6 @@
 
 	@include('users.form')
 
-	<button type="submit" class="btn">Update</button>
-
 </form>
 
 @endsection

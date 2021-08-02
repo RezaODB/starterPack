@@ -8,8 +8,6 @@
 		
 	@include('users.form')
 
-	<button type="submit" class="btn">Submit</button>
-
 </form>
 
 
