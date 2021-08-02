@@ -8,7 +8,7 @@
 }
 
 body {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: auto;
 }
 
@@ -19,6 +19,13 @@ ul {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+.card {
+	max-width: 500px;
+	padding: 1rem;
+	border: 1px solid;
+	background-color: ghostwhite;
 }
 
 .btn {
@@ -65,11 +72,11 @@ header .dropdown {
 header .dropdown .dropdown-items {
 	display: none;
 	position: absolute;
+	right: 0;
 }
 
 header .dropdown:hover .dropdown-items {
 	display: block;
-	width: 100%;
 }
 
 header .dropdown .item {
@@ -83,6 +90,7 @@ header .dropdown-items .item {
 	border: 1px solid;
 	transition: .3s;
 	cursor: pointer;
+	white-space: nowrap;
 }
 
 header .dropdown svg {
@@ -128,6 +136,7 @@ main {
 main h2 {
 	text-transform: uppercase;
 	font-weight: 400;
+	margin-bottom: 2rem;
 }
 
 main ul {
@@ -147,28 +156,32 @@ main li:not(:last-of-type) {
 }
 
 main li:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: ghostwhite;
 }
 
 .input {
-	margin: .5rem 0;
+	margin: 1rem 0;
 }
 
 .input label {
 	font-size: .8rem;
+	font-weight: 700;
 }
 
 .error {
 	font-size: .8rem;
 	color: red;
+	margin-top: .3rem;
 }
 
 .input input:not(input[type="checkbox"]) {
 	display: block;
 	padding-left: .5rem;
 	font-size: .9rem;
-	line-height: 2;
-	min-width: 300px;
+	line-height: 2.2;
+	width: 100%;
+	margin-top: .3rem;
+	border: 1px solid;
 }
 
 

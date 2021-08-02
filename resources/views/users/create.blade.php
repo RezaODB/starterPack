@@ -1,14 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class="card">
 	
-<h2>Register</h2>
-
-<form action="{{ route('users.store') }}" method="POST">
+	<h2>Register</h2>
+	
+	<form action="{{ route('users.store') }}" method="POST">
 		
-	@include('users.form')
+		@include('users.form')
+		
+	</form>
 
-</form>
+</div>
 
 
 @endsection
