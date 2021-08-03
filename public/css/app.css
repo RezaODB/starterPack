@@ -154,7 +154,7 @@ main li {
 }
 
 main li:not(:last-of-type) {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #C7D2FE;
 }
 
 main li:hover {
@@ -187,7 +187,7 @@ main li a:hover {
 	line-height: 2.2;
 	margin-top: .3rem;
 	width: 100%;
-	border: 1px solid;
+	border: 1px solid #C7D2FE;
 	border-radius: 5px;
 }
 
